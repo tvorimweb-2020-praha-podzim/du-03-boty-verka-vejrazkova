@@ -13,97 +13,106 @@ body {
   background-color: #f5f5f5;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
-  scale: "font: bold 400px";
+  font: bold 400px;
+}
+
+.kontejner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .zbozi {
-  border-radius: 20%;
+  border-radius: 10px;
+  margin: 90px;
+  display: flex;
+  box-shadow: 1px 0px 30px #959595;
+  max-width: 50%;
 }
 
 .logo {
+  flex-grow: 100;
+  flex-shrink: 0;
+}
+
+.slogan {
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: white;
+  font-size: 16px;
+  font: bold 500px;
   position: relative;
-  right: 20px;
-  bottom: 20px;
+  left: -70px;
+  top: 30px;
 }
 
 .vizual {
   width: 335px;
-  border-radius: 5% 0% 0% 5%;
+  border-radius: 10px 0px 0px 10px;
   height: 440px;
   background-color: #06d7c1;
   background-image: linear-gradient(#06d7c1, #50cc49);
   padding: 50px;
-  margin: 90px;
-  display: inline-block;
+  display: flex;
 }
 
 .detaily {
   width: 335px;
   height: 440px;
   background-color: white;
-  border-radius: 0% 5% 5% 0%;
+  border-radius: 0px 10px 10px 0px;
   display: inline-block;
-  position: relative;
-  right: 94px;
-  bottom: 83px;
 }
 
 .tlacitko {
   color: white;
   background-color: #e74c3c;
-  border-radius: 10%;
-  padding: 1.5rem;
+  border-radius: 10px;
+  padding: 0.75rem;
   text-transform: uppercase;
   text-decoration: none;
   position: absolute;
-  right: 195px;
-  top: 360px;
+  left: 465px;
+  top: 450px;
 }
 
 .bota {
   position: relative;
-  right: 130px;
-  top: -10px;
+  left: -360px;
+  top: 80px;
 }
 
 .parametr {
   border-top: 2px solid paleturquoise;
   margin: 30px;
   padding: 30px 0px 0px 0px;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
 .velikosti {
-  list-style: none;
+  justify-content: space-between;
 }
 
 .velikosti li {
   display: inline-block;
-  margin: 0px 10px 0px 10px;
+  margin: 1rem;
 }
 
 .vybrana {
   display: inline-block;
   border: 2px solid red;
-  border-radius: 50%;
+  border-radius: 50px;
   width: 25px;
   color: red;
   text-align: center;
-  margin: 20px;
-}
-
-.slogan {
-  color: white;
-  font-size: 16px;
-  font: bold 500px;
-  margin: 0px 0px 0px -20px;
+  padding: 0.2rem;
 }
 
 .cenovka {
   color: white;
-  position: fixed;
-  bottom: 70px;
-  left: 200px;
-  bottom: 110px;
+  position: relative;
+  right: 490px;
+  bottom: -290px;
 }
 
 .cena {
@@ -119,6 +128,7 @@ body {
 h1 {
   font-size: 20px;
   font: bold 500px;
+  text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
   padding: 30px 30px 0px 30px;
@@ -134,17 +144,17 @@ h1 {
 }
 
 /*
-   BARVY
-   svetle sede pozadi      #f5f5f5
-   tmavsi seda             #959595
-   barevny prechod nahore  #06d7c1
-   barevny prechod dole    #50cc49
-   zelena cara             #06d7c1
-   oranzova                #f15f42
-  
-   PISMO
-   Rubik - pouzite rezy pisma regular 400 a medium 500
-   https://fonts.google.com/specimen/Rubik
-  */
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
 
 /* ----- zde zacni psat vlastni css ----- */
